@@ -1,3 +1,10 @@
+import { NavBar } from "../../components/navbar/NavBar";
+
 export default function About() {
-  return <main>About</main>;
+  return (
+    <main>
+      About
+      <NavBar />
+    </main>
+  );
 }
