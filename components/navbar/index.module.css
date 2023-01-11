@@ -1,24 +1,28 @@
 .navigationContainer {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .container {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .itemContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.navigationContainer .container:nth-child(2n) .itemContainer {
+  flex-direction: column-reverse;
 }
 
 .itemTitle {
-    font-weight: 700;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: var(--primary);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--primary);
 }
