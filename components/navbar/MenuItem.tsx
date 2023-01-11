@@ -1,18 +1,19 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import styles from "./index.module.css";
 
 type MenuItemProps = {
-  logo: string;
+  logo: StaticImageData;
   title: string;
   link: string;
 };
 
 export const MenuItem = ({ logo, title, link }: MenuItemProps) => {
   return (
-    <li>
-      <Link href={link}>
-        <span>{title}</span>
-        <Image src={logo} alt={title} width={150} height={150} />
+    <li className={styles.container}>
+      <Link href={link} className={styles.itemContainer}>
+        <Image src={logo} alt={title} />
+        <span className={styles.itemTitle}>{title}</span>
       </Link>
     </li>
   );
