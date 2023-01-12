@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { CATEGORY } from "../../../constants";
+import { CATEGORY } from "../../../data";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const { type } = req.query;
