@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { MenuItem } from "../components/navbar/MenuItem";
-import about from "../public/about.png";
+import { MenuItem } from "./MenuItem";
+import about from "../../public/about.png";
 
 export default {
   title: "NavBar/MenuItem",
